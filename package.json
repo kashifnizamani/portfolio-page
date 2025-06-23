@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "A sample portfolio page to practice Modules and the usage of webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
