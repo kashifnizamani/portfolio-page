@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+button{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100px;
+    justify-content: space-around;
+    justify-self: space-between;
+    border-radius: 10px;
+
+}
