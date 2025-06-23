@@ -1,2 +1,5 @@
 import "./style.css";
-console.log("hello")
+import { pageLoad } from "./home";
+
+
+pageLoad();
