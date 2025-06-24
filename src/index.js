@@ -10,20 +10,24 @@ const contact = document.querySelector(".contact");
 
 homePage();
 
-project.addEventListener("click", ()=>{
+project.addEventListener("click", (e)=>{
 
     content.innerHTML = "";
+    e.target.style.backgroundColor = "red";
     projectsPage();
     
 })
 
-contact.addEventListener("click", ()=>{
+contact.addEventListener("click", (e)=>{
     content.innerHTML = "";
+    e.target.style.backgroundColor = "red";
     contactPage();
+
 })
 
-home.addEventListener("click", ()=>{
+home.addEventListener("click", (e)=>{
     content.innerHTML = "";
+    e.target.style.backgroundColor = "red";
     homePage();
 })
 

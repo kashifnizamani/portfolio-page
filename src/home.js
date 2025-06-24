@@ -20,7 +20,7 @@ export const homePage = function(){
     paragraph1.classList.add("paragraph");
 
     const achievments = document.createElement("h1");
-    achievments.textContent = "Achievements";
+    achievments.textContent = "About Me";
 
     const paragraph2 = document.createElement("p");
     paragraph2.textContent = " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos aliquam excepturi saepe porro fuga nobis aperiam quam impedit? Placeat ad enim eos necessitatibus omnis eaque repellendus perferendis, qui laudantium quibusdam!"
