@@ -1,11 +1,12 @@
-import background from ".//background.jpg";
+import sideImage from "../assets/homepage.jpg";
 
-const container = document.querySelector("#content");
+ export const container = document.querySelector("#content");
 
-export const pageLoad = function(){
+
+export const homePage = function(){
 
     const img = document.createElement("img");
-    img.src = background;
+    img.src = sideImage;
 
     const div = document.createElement("div");
     div.classList.add("info");

@@ -1,8 +1,13 @@
-export const projects = function(){
+import sideImage from "../assets/projectspage.jpg"
+
+export const projectsPage = function(){
     
+      const img = document.createElement("img");
+        img.src = sideImage;
+
     const content = document.querySelector("#content");
     const div = document.createElement("div");
-    div.classList.add("container");
+    div.classList.add("info");
 
     for(let i = 1; i <= 3; i++){
          const card = document.createElement("div");
@@ -19,6 +24,7 @@ export const projects = function(){
         div.appendChild(card);
     }
 
-    content.appendChild(div)
+    content.appendChild(img);
+    content.appendChild(div);
 
 }

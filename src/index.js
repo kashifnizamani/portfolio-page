@@ -1,19 +1,29 @@
 import "./style.css";
-import { pageLoad } from "./home";
-import { projects } from "./projects";
+import { homePage } from "./home";
+import { projectsPage } from "./projects";
+import { contactPage } from "./contact";
 
 const content = document.querySelector("#content");
 const home = document.querySelector(".home");
 const project = document.querySelector(".projects");
 const contact = document.querySelector(".contact");
 
-pageLoad();
+homePage();
 
 project.addEventListener("click", ()=>{
 
     content.innerHTML = "";
-    projects();
+    projectsPage();
     
 })
 
+contact.addEventListener("click", ()=>{
+    content.innerHTML = "";
+    contactPage();
+})
+
+home.addEventListener("click", ()=>{
+    content.innerHTML = "";
+    homePage();
+})
 
