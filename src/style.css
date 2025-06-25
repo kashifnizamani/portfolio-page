@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
-
+    background-color: rgb(34, 35, 81);
+    color: white;
+   
 }
-
-
 
 nav{
     display: flex;
@@ -15,12 +15,15 @@ nav{
 
 button{
     display: flex;
-    background-color: black;
-    color: white;
-    width: 100px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+    width: 150px;
     justify-content: space-around;
-    
-    border-radius: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    background-color: white;
 
 }
 #content{
@@ -64,9 +67,11 @@ footer{
     text-align: center;
     border-radius: 10px;
     background-color: black;
+    margin: 5px;
 }
 a{
     color: white;
+    background-color: inherit;
 }
 
 .card{
@@ -81,5 +86,10 @@ a{
 .contactInfo > p{
     font-size: 20px;
     
+}
+
+button:focus{
+
+    background-color: aqua;
 }
 

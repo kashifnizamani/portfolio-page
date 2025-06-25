@@ -3,31 +3,36 @@ import { homePage } from "./home";
 import { projectsPage } from "./projects";
 import { contactPage } from "./contact";
 
-const content = document.querySelector("#content");
-const home = document.querySelector(".home");
-const project = document.querySelector(".projects");
-const contact = document.querySelector(".contact");
 
 homePage();
 
-project.addEventListener("click", (e)=>{
+const buttons = document.querySelectorAll("button");
+const content = document.querySelector("#content");
 
-    content.innerHTML = "";
-    e.target.style.backgroundColor = "red";
-    projectsPage();
+buttons.forEach(function(button){
+  button.addEventListener("click", (e)=>{
+
+   if(e.target.getAttribute("class") === "home"){
     
-})
-
-contact.addEventListener("click", (e)=>{
     content.innerHTML = "";
-    e.target.style.backgroundColor = "red";
+    homePage();
+
+   }
+  else if(e.target.getAttribute("class") === "projects"){
+    
+    content.innerHTML = "";
+    projectsPage();
+
+   }
+
+   else if(e.target.getAttribute("class") === "contact"){
+    
+    content.innerHTML = "";
     contactPage();
 
-})
+   }
 
-home.addEventListener("click", (e)=>{
-    content.innerHTML = "";
-    e.target.style.backgroundColor = "red";
-    homePage();
-})
 
+
+  })
+})
